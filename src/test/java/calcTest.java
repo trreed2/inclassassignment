@@ -5,9 +5,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class calcTest {
 
     @Test
-    public void testAdd() {
-        Calculator calculator = new Calculator();
-        int result = calculator.add(2, 3);
-        assertEquals(calculator.add(result), 5);
+    public void factorialFive() {
+        Factorial f = new Factorial();
+        int expected = 120;
+        int actual = f.fact(5);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void factorialZero() {
+        Factorial f = new Factorial();
+        int expected = 180;
+        int actual = f.fact(5);
+        assertEquals(expected, actual);
+
     }
 }
