@@ -11,13 +11,4 @@ public class calcTest {
         int actual = f.fact(5);
         assertEquals(expected, actual);
     }
-
-    @Test
-    public void factorialZero() {
-        Factorial f = new Factorial();
-        int expected = 180;
-        int actual = f.fact(5);
-        assertEquals(expected, actual);
-
-    }
 }
